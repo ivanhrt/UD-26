@@ -35,4 +35,46 @@ public class Piezas {
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pieza")
 	private @Getter @Setter List<Suministra> suministra;
+
+	/**
+	 * @return the id
+	 */
+	public Long getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+
+	/**
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * @return the suministra
+	 */
+	public List<Suministra> getSuministra() {
+		return suministra;
+	}
+
+	/**
+	 * @param suministra the suministra to set
+	 */
+	public void setSuministra(List<Suministra> suministra) {
+		this.suministra = suministra;
+	}
 }

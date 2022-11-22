@@ -27,4 +27,60 @@ public class Suministra {
 	private @Getter @Setter Proveedores proveedor;
 
 	private @Getter @Setter int precio;
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	/**
+	 * @return the pieza
+	 */
+	public Piezas getPieza() {
+		return pieza;
+	}
+
+	/**
+	 * @param pieza the pieza to set
+	 */
+	public void setPieza(Piezas pieza) {
+		this.pieza = pieza;
+	}
+
+	/**
+	 * @return the proveedor
+	 */
+	public Proveedores getProveedor() {
+		return proveedor;
+	}
+
+	/**
+	 * @param proveedor the proveedor to set
+	 */
+	public void setProveedor(Proveedores proveedor) {
+		this.proveedor = proveedor;
+	}
+
+	/**
+	 * @return the precio
+	 */
+	public int getPrecio() {
+		return precio;
+	}
+
+	/**
+	 * @param precio the precio to set
+	 */
+	public void setPrecio(int precio) {
+		this.precio = precio;
+	}
 }
